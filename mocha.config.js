@@ -6,6 +6,7 @@ require('babel-core/register');
 const Adapter = require('enzyme-adapter-react-16');
 const enzyme = require('enzyme');
 const { JSDOM } = require('jsdom');
+require('raf/polyfill');
 
 // configure enzyme
 enzyme.configure({ adapter: new Adapter() });
